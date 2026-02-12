@@ -39,7 +39,7 @@ export default function Home() {
             <div className="flex items-center gap-3 mb-6">
               <BookOpen className="text-gold" size={24} strokeWidth={1.5} />
               <h2 className="font-heading text-burgundy text-2xl md:text-3xl font-bold">
-                Tổng quan Điều hành
+                Dẫn Nhập
               </h2>
             </div>
             <div className="pl-4 border-l-2 border-gold/30">
