@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Giáo Lý Công Giáo Về Sự Chết — Sacred Academia Report
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+![Sacred Academia Banner](public/og-image.jpg)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+*Một công trình nghiên cứu thần học chuyên sâu về Sự Chết, Cánh Chung và Ý Nghĩa Hiện Sinh của Đời Người trong truyền thống Công giáo, được trình bày dưới giao diện Web App hiện đại, mang đậm phong cách Học thuật Thánh thiêng (Sacred Scholasticism).*
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[Xem Demo Trực Tiếp](https://tuananhhusc.github.io/Giao-Ly-Cong-Giao-Ve-Su-Chet/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+</div>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📖 Giới Thiệu
 
-To learn more about Next.js, take a look at the following resources:
+Dự án này là **Báo cáo Nghiên cứu Thần học** được chuyển thể thành ứng dụng web tương tác. Nội dung tập trung vào việc trình bày quan điểm của Giáo hội Công giáo về sự chết, không chỉ như một sự kiện sinh học, mà là một mầu nhiệm gắn liền với nhân học, thần học và cánh chung học.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Ứng dụng được thiết kế tối ưu cho trải nghiệm đọc sâu (deep reading), với các tính năng hỗ trợ nghiên cứu như **Chế độ Học giả (Scholar Mode)**, hệ thống trích dẫn tương tác, và giao diện lấy cảm hứng từ các bản thảo cổ điển.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## ✨ Tính Năng Nổi Bật
 
-## Deploy on Vercel
+- **Sacred Scholasticism UI**: Giao diện mang màu sắc thánh thiêng, sử dụng font chữ *Playfair Display* và *Source Serif 4*, kết hợp với bảng màu Burgundy, Gold và Parchment.
+- **Scholar Mode**: Chế độ tương tác dành cho người nghiên cứu, tự động làm nổi bật (highlight) các thuật ngữ thần học quan trọng và trích dẫn nguồn.
+- **Interactive Citations**: Hệ thống trích dẫn thông minh, hiển thị nguồn gốc (Kinh Thánh, Giáo Lý, Văn kiện Huấn quyền) ngay khi di chuột hoặc nhấn vào.
+- **Responsive Design**: Tối ưu hóa hoàn toàn cho cả máy tính và thiết bị di động, đảm bảo trải nghiệm đọc liền mạch.
+- **Dark/Light Mode Ready**: Nền tảng kiến trúc hỗ trợ giao diện sáng/tối (hiện tại tối ưu cho giao diện giấy da cổ điển).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Công Nghệ Sử Dụng
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Ngôn ngữ**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) + [Lucide React](https://lucide.dev/) (Icons)
+- **Deployment**: GitHub Pages (Static Export)
+
+## 🚀 Cài Đặt & Chạy Cục Bộ
+
+Để chạy dự án trên máy cá nhân, bạn cần cài đặt [Node.js](https://nodejs.org/) (phiên bản 18+).
+
+1.  **Clone repository**:
+    ```bash
+    git clone https://github.com/tuananhhusc/Giao-Ly-Cong-Giao-Ve-Su-Chet.git
+    cd sacred-academia
+    ```
+
+2.  **Cài đặt dependencies**:
+    ```bash
+    npm install
+    ```
+
+3.  **Chạy server phát triển**:
+    ```bash
+    npm run dev
+    ```
+
+4.  Mở trình duyệt và truy cập `http://localhost:3000`.
+
+## 📦 Hướng Dẫn Deploy lên GitHub Pages
+
+Dự án đã được cấu hình sẵn để deploy tự động lên GitHub Pages thông qua GitHub Actions.
+
+### Bước 1: Cấu hình Repository
+1.  Vào **Settings** của repository trên GitHub.
+2.  Chọn mục **Pages** ở menu bên trái.
+3.  Tại phần **Build and deployment** > **Source**, chọn **GitHub Actions**.
+
+### Bước 2: Push code
+Mỗi khi bạn push code lên nhánh `main`, GitHub Action sẽ tự động chạy:
+1.  Build dự án (`npm run build`).
+2.  Xuất bản file tĩnh (`out` directory).
+3.  Deploy lên GitHub Pages.
+
+### Lưu ý về `next.config.ts`
+File cấu hình đã được thiết lập `output: 'export'` và `basePath` tương ứng với tên repository để đảm bảo các link và asset hoạt động chính xác trên GitHub Pages.
+
+---
+
+## 📚 Tài Liệu Tham Khảo Chính
+
+- *Sách Giáo Lý Hội Thánh Công Giáo* (CCC)
+- *Thánh Kinh* (Bản dịch Nhóm Các Giờ Kinh Phụng Vụ)
+- Thông điệp *Spe Salvi* (Đức Bênêđictô XVI)
+- Thông điệp *Evangelium Vitae* (Thánh Gioan Phaolô II)
+- Hiến chế *Gaudium et Spes* (Công đồng Vatican II)
+- Các tác phẩm của Thánh Augustinô (*Confessiones*, *De Civitate Dei*) và Thánh Tôma Aquinô (*Summa Theologica*).
+
+---
+
+© 2024 Sacred Academia Project. *Ad Majorem Dei Gloriam.*
